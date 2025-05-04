@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+
+    box-sizing: border-box;
+    font-family: 'Work Sans'; /*Establece la fuente predeterminada para todo el sitio web como Work Sans*/
+    margin: 0; /*Elimina todos los márgenes por defecto de los elementos*/
+    padding: 0;/*Elimina todos los rellenos internos por defecto*/
+
+}
+
+html{
+    /*hace que el desplazamiento (scroll) dentro de la página sea suave en lugar de inmediato*/
+    scroll-behavior: smooth;
+}
+
+/*MENU*/
+
+.contenedor-header{
+    background: #0160b3;
+    position: fixed; /*Hace que el encabezado quede fijo en la pantalla, incluso cuando el usuario hace scroll*/
+    width: 100%;
+    height: 70px;
+    top:0%;
+    left: 0%;
+    z-index: 99; /*controla la superposición*/
+    padding: 18px 0;
+}
+
+.contenedor-header header{ /*solo afecta a la etqueta header de la clase "contenedor-header"*/
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{ /*Aplicar estilos solo a los enlaces del menú de navegación dentro del header*/
+
+    text-align: left;
+    color: #fff;
+    margin: 0 15px; /*Agrega espacio duera del elemento*/
+    padding: 3px; /*Agrega espacio dentro del elemento*/
+    transition: .5s; /*Aplica una transición suave a las propiedades css que cambien*/
+    text-decoration: none;
+
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: #1CB698
+
+}
+
+.nav-responsive{
+    background-color: #ce3636;
+    color: #fff;
+    
+}
+
