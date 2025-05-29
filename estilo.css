@@ -284,4 +284,72 @@ html{
 }
 
 .skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.skills .skill span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #218fcf;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .skill .progreso{
+    background-color: #1CB698;
+    top: 0;
+    position: absolute;
+    left: 0;
+    height: 8px;
+}
+
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1CB698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards; /*Aplica una animación de 2 segundos llamada javascript, forwad hace que al terminar la animación esta se mantenga*/
+}
+
+@keyframes javascript{ /*Dfina los pasos para la animación "javascript"*/
+    0%{width: 0%;} /*La barra crece desde 0% hasta 30% de ancho*/
+    100%{width: 30%;}
+}
+
+.skills .skill .cplusplus{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+
+@keyframes htmlcss{
+    0%{width: 0%;}
+    100%{width: 89%;}
+}
+
+.skills .skill .photo{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+
+@keyframes htmlcss{
+    0%{width: 0%;}
+    100%{width: 89%;}
 }
