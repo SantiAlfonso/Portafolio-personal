@@ -232,12 +232,14 @@ html{
     background-color: transparent;        /* Hace que el fondo del botón sea transparente */
     border: 2px solid #fff;               /* Aplica un borde blanco de 2 píxeles */
     width: fit-content;                   /* El ancho se ajusta al contenido del botón */
+    display: block;
     margin: 20px auto;                    /* Agrega 20px de margen arriba/abajo y centra horizontalmente */
     padding: 10px 22px;                   /* Espaciado interno: 10px arriba/abajo y 22px a los lados */
     font-size: 16px;                      /* Tamaño del texto de 16 píxeles */
     color: #fff;                          /* Color del texto en blanco */
     position: relative;                   /* Posición relativa, necesaria para posicionar hijos de forma absoluta */
     z-index: 10;                          /* Asegura que el botón esté por encima de elementos con menor z-index */
+    border-radius: 8px;
 }
 
 .sobremi button .overlay {
@@ -249,6 +251,7 @@ html{
     background-color: #1CB698;
     z-index: -1;
     transition: 1s;
+    border-radius: 8px;
 }
 
 .sobremi button:hover .overlay{
@@ -339,17 +342,144 @@ html{
     animation: 2s javascript forwards;
 }
 
-@keyframes htmlcss{
+@keyframes cplusplus{
     0%{width: 0%;}
-    100%{width: 89%;}
+    100%{width: 45%;}
 }
 
-.skills .skill .photo{
+.skills .skill .php{
     width: 0%;
-    animation: 2s javascript forwards;
+    animation: 2s php forwards;
 }
 
-@keyframes htmlcss{
+@keyframes php{
     0%{width: 0%;}
-    100%{width: 89%;}
+    100%{width: 25%;}
+}
+
+.skills .skill .kotlin{
+    width: 0%;
+    animation: 2s kotlin forwards;
+}
+
+@keyframes kotlin{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+.skills .skill .htmlycss{
+    width: 0%;
+    animation: 2s htmlycss forwards;
+}
+
+@keyframes htmlycss{
+    0%{width: 0%;}
+    100%{width: 68%;}
+}
+
+.skills .skill .R{
+    width: 0%;
+    animation: 2s R forwards;
+}
+
+@keyframes R{
+    0%{width: 0%;}
+    100%{width: 20%;}
+}
+
+.skills .skill .python{
+    width: 0%;
+    animation: 2s python forwards;
+}
+
+@keyframes python{
+    0%{width: 0%;}
+    100%{width: 49%;}
+}
+
+.skills .skill .comunicacion_verbal{
+    width: 0%;
+    animation: 2s comunicacion_verbal forwards;
+}
+
+@keyframes comunicacion_verbal{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .comunicacion_escrita{
+    width: 0%;
+    animation: 2s comunicacion_escrita forwards;
+}
+
+@keyframes comunicacion_escrita{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .trabajo_equipo{
+    width: 0%;
+    animation: 2s trabajo_equipo forwards;
+}
+
+@keyframes trabajo_equipo{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .creatividad{
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+
+@keyframes creatividad{
+    0%{width: 0%;}
+    100%{width: 88%;}
+}
+
+.skills .skill .dedicacion{
+    width: 0%;
+    animation: 2s dedicacion forwards;
+}
+
+@keyframes dedicacion{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+/* SECCION CURRICULUM */
+.trayectoria{
+    background-color: #1c2125;
+    color: #fff;
+}
+
+.trayectoria .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.trayectoria h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.trayectoria .fila{
+    display: flex;
+}
+
+.trayectoria .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+
+.trayectoria .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.trayectoria .fila .izquierda{
+    border-right: 2px solid #0160b3;
 }
