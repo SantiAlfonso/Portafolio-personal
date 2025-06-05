@@ -137,6 +137,7 @@ html{
     background-color: #0160b3;
     color: #fff;
     padding: 50px 20px;
+    
 }
 
 .sobremi .contenido-seccion{
@@ -204,7 +205,7 @@ html{
 }
 
 .sobremi .fila .col .contenedor-intereses .interes{
-    background-color: #ce3636;
+    background-color: #272d31;
     width: 100px;
     height: 100px;
     border-radius: 10px;
@@ -483,3 +484,41 @@ html{
 .trayectoria .fila .izquierda{
     border-right: 2px solid #0160b3;
 }
+
+.trayectoria .fila .derecha{
+    border-left: 2px solid #0160b3;
+}
+
+.trayectoria .fila .item{
+    font-size: 20px;
+    margin-bottom: 25px;
+    background-color: #272d31;
+    position: relative;
+    border-radius: 2px;
+    padding: 2%;
+}
+
+
+.trayectoria .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.trayectoria .fila .item .centro{
+    font-size: 22px;
+    color: #0160b3;
+}
+
+.trayectoria .fila .item .fecha{
+    font-size: 22px;
+    color: #0160b3;
+}
+
+.trayectoria .fila .izq{
+    border-right: 2px solid #0160b3;
+}
+
+.trayectoria .fila .der{
+    border-right: 2px solid #0160b3;
+}
+
