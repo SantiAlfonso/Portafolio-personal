@@ -533,10 +533,11 @@ html{
 
 /* SECCIÓN SKILLS*/
 .skills{
-    background-color: #1e2326;
+    background: linear-gradient(to bottom, #202020, #001e39);
     color: #fff;
     padding: 50px 20px;
 }
+
 
 .skills .contenido-seccion{
     max-width: 1100px;
