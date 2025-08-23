@@ -11,6 +11,8 @@
     <title>Portafolio</title>
     <link rel="stylesheet" href="estilo.css">
 
+    <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -22,16 +24,16 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li> 
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#trayectoria">FORMACIÓN</a></li>
-                    <li><a href="#portafolio">PORTAFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#trayectoria" onclick="seleccionar()">FORMACIÓN</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
-            
+
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -47,9 +49,15 @@
             <h1>SANTIAGO ALFONSO PRIETO</h1>
             <h2>Tecnologo en sistemas</h2>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/SantiAlfonso" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+
+                <a href="https://www.linkedin.com/in/santiago-alfonso-a441aa1a9/?trk=opento_sprofile_goalscard"
+                    target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -58,30 +66,36 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mí</h2>
-            <p><span>Hola soy Santiago Alfonso</span> Soy una persona apasionada por la programación que cada día busca nuevos conocimientos que me aporten tanto en mi desarrollo profesional como personal. Por otro lado tambien cuento con amplias habilidades en el manejo de tecnologias modernas para la solución de problemas.  </p>
+            <p><span>Hola soy Santiago Alfonso</span> Soy una persona apasionada por la programación que cada día busca
+                nuevos conocimientos que me aporten tanto en mi desarrollo profesional como personal. Por otro lado
+                tambien cuento con amplias habilidades en el manejo de tecnologias modernas para la solución de
+                problemas. </p>
 
             <div class="fila">
                 <!--datos personales-->
                 <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Cumpleaños</strong>
-                            24-03-2005
-                        </li>
-                          <li>
-                            <strong>Correo</strong>
-                            santiagoalfonso738@gmail.com
-                        </li>
-                         <li>
-                            <strong>Ciudad</strong>
-                            Bogotá
-                        </li>
-                        <li>
-                            <strong>Cargo</strong>
-                            <span>Desarrollador</span>
-                        </li>
-                    </ul>
+                    <div class="datos">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Cumpleaños</strong>
+                                24-03-2005
+                            </li>
+                            <li>
+                                <strong>Correo</strong>
+                                santiagoalfonso750@gmail.com
+                            </li>
+                            <li>
+                                <strong>Ciudad</strong>
+                                Bogotá
+                            </li>
+                            <li>
+                                <strong>Cargo</strong>
+                                <span>Desarrollador</span>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
 
                 <!--intereses-->
@@ -114,7 +128,7 @@
                             <span>CODE</span>
                         </div>
                     </div>
-                    
+
                 </div>
 
             </div>
@@ -192,7 +206,7 @@
                         <span>Python</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>49%</span>
+                                <span>60%</span>
                             </div>
                         </div>
                     </div>
@@ -211,7 +225,7 @@
                         <span>Comunicación escrita</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>70%</span>
+                                <span>80%</span>
                             </div>
                         </div>
                     </div>
@@ -249,7 +263,7 @@
         <div class="contenido-seccion">
             <h2>FORMACIÓN</h2>
             <div class="fila">
-                
+
                 <div class="col izquierda">
                     <h3>Educación</h3>
                     <div class="item_educacion">
@@ -312,11 +326,13 @@
             <h2>PORTAFOLIO</h2>
             <div class="galeria">
                 <div class="proyecto">
+                    <a href="https://github.com/Jhonxy123/Deep_Adres" target="_blank">
                     <img src="/img/adres.png" alt="">
                     <div class="overlay">
                         <h3>Deep Adres</h3>
                         <p>Ingenieria de software</p>
                     </div>
+                    </a>
                 </div>
                 <div class="proyecto">
                     <img src="/img/UDmath.png" alt="">
@@ -347,7 +363,7 @@
                         <span class="overlay"></span>
                     </button>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -358,11 +374,6 @@
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <p>© Hecho por Santiago Alfonso</p>
-         <div class="redes">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
     </footer>
 
 
